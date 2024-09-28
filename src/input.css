@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* 
+ */
+
+* {
+    @apply m-0 p-0;
+}
+
+.p2::before {
+    @apply h-28 max-h-[17%] content-[""] block absolute bottom-0 left-0 w-full bg-white z-0
+}
