@@ -21,16 +21,16 @@
   </style>
 </head>
 
-<body class="">
+<body class=" font-sans">
   <!-- Header -->
-  <header class="bg-black text-white">
-    <div class="container w-full lg:w-[1212px] lg:mx-auto  ">
-      <div class="mx-4  flex  items-center  ">
+  <header class="bg-black  text-white">
+    <div class="container  sm:w-[1212px] lg:mx-auto  ">
+      <div class="sm:mx-4  ml-2 flex  items-center justify-between  ">
         <div class=" text-2xl font-bold w-[20%]">
           <img src="https://danangfantasticity.com/wp-content/uploads/2017/05/logo-mobile2@.png" alt="Logo"
-            class="max-h-[90px] pt-1">
+            class="max-h-[90px] h-14 w-14 sm:h-full sm:w-20 pt-1">
         </div>
-        <nav class="flex justify-between w-[80%]">
+        <nav class="  w-[80%] hidden sm:block  ">
           <ul class="flex float-left space-x-6 gap-2">
             <li><a href="#" class=" text-sm lg:text-base font-[arial] font-bold">GIỚI THIỆU</a></li>
             <li><a href="#" class=" text-sm lg:text-base font-[arial] font-bold">NỔI BẬT</a></li>
@@ -38,21 +38,34 @@
             <li><a href="#" class=" text-sm lg:text-base font-[arial] font-bold">TRẢI NGHIỆM</a></li>
             <li><a href="#" class=" text-sm lg:text-base font-[arial] font-bold">NHIỀU HƠN</a></li>
           </ul>
-          <i class="fa fa-search" aria-hidden="true"></i>
+          <i class="fa fa-search  float-end " aria-hidden="true"></i>
         </nav>
+        <!-- nav mobile -->
+        <span class=" sm:hidden bg-slate-800 h-14 w-14 flex justify-center items-center ">
+          <i class="fa fa-align-justify " aria-hidden="true"></i>
+        </span>
       </div>
 
     </div>
   </header>
 
   <!--  -->
-  <section class="  bg-[#feeddd] p2 relative w-full  pt-4">
-    <div class=" container  lg:w-[1212px] w-full lg:mx-auto  grid grid-cols-2 gap-6 ">
+  <section class="bg-[#feeddd] p2 relative pt-4">
+    <div class=" container  sm:w-[1212px]  lg:mx-auto overflow-hidden grid sm:grid-cols-2 gap-6 ">
       <!-- Text Section -->
-      <div class=" sm:mt-16 ml-4  ">
-        <h1 class="lg:text-4xl font-bold text-pink-700 mb-4">Khám Phá<span class="text-pink-600"> Hưng Nguyên</span>
+      <div class=" sm:mt-16 sm:ml-4 mx-4 max-w-[335px]">
+        <h1 class="text-3xl text-center sm:text-left lg:text-4xl font-bold text-pink-700 mb-4">Khám Phá<span
+            class="text-pink-600">
+            Huyện Hưng
+            Nguyên</span>
         </h1>
-        <p class="lg:text-xl font-medium text-gray-800 mb-20 lg:max-w-[360px]">Miền Đất Của Thiên Nhiên Tươi Đẹp Và Di
+        <p class="text-sm sm:text-xl font-medium text-center sm:text-left text-gray-800 mb-10 sm:mb-20
+          lg:max-w-[360px]">
+          Miền Đất
+          Của
+          Thiên
+          Nhiên Tươi
+          Đẹp Và Di
           Sản
           Văn
           Hóa Độc
@@ -60,7 +73,7 @@
           Gắn Kết Con Người Với Quá Khứ</p>
 
         <!-- Search bar -->
-        <div class="relative flex justify-center md:justify-start items-center lg:max-w-[460px] ">
+        <div class="relative flex justify-center md:justify-start items-center  lg:max-w-[460px] ">
           <input type="text" placeholder="Bạn muốn đi đâu?"
             class="border-2 border-gray-300 rounded-full py-4 px-5 w-full">
           <button class="bg-yellow-400 absolute  right-1  text-black  py-3 px-6 rounded-full ">
@@ -70,42 +83,148 @@
       </div>
 
       <!-- Image Gallery Section -->
-      <div class=" lg:mx-auto mr-4  ">
+      <div class=" lg:mx-auto sm:mr-4 ">
 
-        <div class="gap-4 lg:h-[590px] flex items-end   w-full">
-          <!--  -->
-          <div class="relative bottom-10">
-            <img
-              src="https://withlocals-com-res.cloudinary.com/image/upload/c_fill,f_auto,g_faces,q_auto,w_184,h_285,dpr_1.0/website/homepage/image-grid/marrakech/marrakech-0"
-              alt="Image 1" class="rounded-2xl">
+        <!-- pc & ipad -->
+        <div class="hidden sm:block ">
+          <div class="gap-4 lg:h-[590px]  items-end  sm:flex w-full">
+            <!--  -->
+            <div class="relative lg:bottom-10">
+              <img
+                src="https://withlocals-com-res.cloudinary.com/image/upload/c_fill,f_auto,g_faces,q_auto,w_184,h_285,dpr_1.0/website/homepage/image-grid/marrakech/marrakech-0"
+                alt="Image 1" class="rounded-2xl">
+              <!--marker pc -->
+              <div class=" sm:hidden lg:block">
+                <div class="  flex justify-between mt-5 max-w-[240px] text-green-600">
+                  <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                  <i class="fa fa-map-marker " aria-hidden="true">
+                    <span class="text-green-800 font-semibold lg:mx-1">Marrakech </span></i>
+                  <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
 
-            <div class="flex justify-between mt-5 max-w-[240px] text-green-600">
-              <i class="fa fa-chevron-left" aria-hidden="true"></i>
-              <i class="fa fa-map-marker " aria-hidden="true">
-                <span class="text-black mx-1">Marrakech </span></i>
-              <i class="fa fa-chevron-right" aria-hidden="true"></i>
-
+            <!--  -->
+            <div class=" relative">
+              <img
+                src="https://withlocals-com-res.cloudinary.com/image/upload/c_fill,f_auto,g_faces,q_auto,w_184,h_285,dpr_1.0/website/homepage/image-grid/marrakech/marrakech-1"
+                alt="Image 2" class="rounded-2xl ">
+              <img
+                src="https://withlocals-com-res.cloudinary.com/image/upload/c_fill,f_auto,g_faces,q_auto,w_184,h_184,dpr_1.0/website/homepage/image-grid/marrakech/marrakech-2"
+                alt="Image 3" class="rounded-2xl mt-6">
+            </div>
+            <!--  -->
+            <div class="relative">
+              <img
+                src="https://withlocals-com-res.cloudinary.com/image/upload/c_fill,f_auto,g_faces,q_auto,w_184,h_285,dpr_1.0/website/homepage/image-grid/marrakech/marrakech-3"
+                alt="Image 4" class="rounded-2xl">
+              <img
+                src="https://withlocals-com-res.cloudinary.com/image/upload/c_fill,f_auto,g_faces,q_auto,w_184,h_285,dpr_1.0/website/homepage/image-grid/marrakech/marrakech-4"
+                alt="Image 5" class="rounded-2xl mt-6">
             </div>
           </div>
-          <!--  -->
-          <div class=" relative">
-            <img
-              src="https://withlocals-com-res.cloudinary.com/image/upload/c_fill,f_auto,g_faces,q_auto,w_184,h_285,dpr_1.0/website/homepage/image-grid/marrakech/marrakech-1"
-              alt="Image 2" class="rounded-2xl ">
-            <img
-              src="https://withlocals-com-res.cloudinary.com/image/upload/c_fill,f_auto,g_faces,q_auto,w_184,h_184,dpr_1.0/website/homepage/image-grid/marrakech/marrakech-2"
-              alt="Image 3" class="rounded-2xl mt-6">
+          <!-- marker ipad -->
+          <div class=" sm:block lg:hidden h-10  z-10 relative">
+            <div class="  flex justify-between mt-5 w-full items-center  text-green-400 h-10">
+              <i class="fa fa-chevron-left float-left text-green-800" aria-hidden="true"></i>
+              <div class="flex justify-center items-center border border-green-700 h-10  hover:bg-green-700 ">
+                <div class="  flex w-[240px] items-center justify-center ">
+                  <i class="fa fa-map-marker  " aria-hidden="true">
+                  </i>
+                  <span class=" mx-1.5 font-semibold  text-green-800 hover:text-white">Marrakech
+                  </span>
+                </div>
+              </div>
+              <i class="fa fa-chevron-right float-right text-green-800" aria-hidden="true"></i>
+            </div>
           </div>
-          <!--  -->
-          <div class="relative">
-            <img
-              src="https://withlocals-com-res.cloudinary.com/image/upload/c_fill,f_auto,g_faces,q_auto,w_184,h_285,dpr_1.0/website/homepage/image-grid/marrakech/marrakech-3"
-              alt="Image 4" class="rounded-2xl">
-            <img
-              src="https://withlocals-com-res.cloudinary.com/image/upload/c_fill,f_auto,g_faces,q_auto,w_184,h_285,dpr_1.0/website/homepage/image-grid/marrakech/marrakech-4"
-              alt="Image 5" class="rounded-2xl mt-6">
-          </div>
+        </div>
 
+        <!-- mobile -->
+        <div class="sm:hidden flex overflow-y-auto  ">
+          <!-- Marrakech -->
+          <div class=" gap-4 lg:h-[590px] flex items-end  w-full   relative flex-shrink-0 translate-x-[-120px]">
+            <!--  -->
+            <div class="relative flex-shrink-0 ">
+              <img
+                src="https://withlocals-com-res.cloudinary.com/image/upload/c_fill,f_auto,g_faces,q_auto,w_184,h_285,dpr_1.0/website/homepage/image-grid/marrakech/marrakech-1"
+                alt="Image 2" class="rounded-2xl ">
+              <img
+                src="https://withlocals-com-res.cloudinary.com/image/upload/c_fill,f_auto,g_faces,q_auto,w_184,h_285,dpr_1.0/website/homepage/image-grid/marrakech/marrakech-2"
+                alt="Image 3" class="rounded-2xl mt-6">
+            </div>
+
+            <!--  -->
+            <div class="relative  bottom-10 w-[220px] ">
+              <img
+                src="https://withlocals-com-res.cloudinary.com/image/upload/c_fill,f_auto,g_faces,q_auto,w_184,h_285,dpr_1.0/website/homepage/image-grid/marrakech/marrakech-0"
+                alt="Image 1" class="rounded-2xl min-w-[220px]">
+
+              <div class="flex mx-auto items-center sm:mt-5  max-w-[170px] text-green-800">
+                <i class="fa fa-chevron-left mr-2" aria-hidden="true"></i>
+                <i class="fa fa-map-marker hover:bg-green-800 text-green-500  border p-1 m-2 flex items-center justify-center w-28  border-black "
+                  aria-hidden="true">
+                  <span class=" lg:mx-1 m-2 text-green-800 hover:text-white">Marrakech </span></i>
+                <i class="fa fa-chevron-right ml-2" aria-hidden="true"></i>
+
+              </div>
+            </div>
+
+            <!--  -->
+            <div class="relative  flex-shrink-0">
+              <img
+                src="https://withlocals-com-res.cloudinary.com/image/upload/c_fill,f_auto,g_faces,q_auto,w_184,h_285,dpr_1.0/website/homepage/image-grid/marrakech/marrakech-3"
+                alt="Image 4" class="rounded-2xl ">
+              <img
+                src="https://withlocals-com-res.cloudinary.com/image/upload/c_fill,f_auto,g_faces,q_auto,w_184,h_285,dpr_1.0/website/homepage/image-grid/marrakech/marrakech-4"
+                alt="Image 5" class="rounded-2xl mt-6">
+            </div>
+
+          </div>
+          <!-- Rome -->
+          <div class=" gap-4 lg:h-[590px] flex items-end  w-full   relative flex-shrink-0">
+            <!--  -->
+            <div class="relative flex-shrink-0 ">
+              <img
+                src="https://withlocals-com-res.cloudinary.com/image/upload/c_fill,f_auto,g_faces,q_auto,w_132,h_249,dpr_2.0/website/homepage/image-grid/rome/rome-1"
+                alt="Image 2" class="rounded-2xl h-[285px] ">
+              <img
+                src="https://withlocals-com-res.cloudinary.com/image/upload/c_fill,f_auto,g_faces,q_auto,w_132,h_249,dpr_2.0/website/homepage/image-grid/rome/rome-0"
+                alt="Image 3" class="rounded-2xl mt-6 h-[285px]">
+            </div>
+
+            <!--  -->
+            <div class="relative  bottom-10 w-[220px] ">
+              <video autoplay="" playsinline="" class="MediaCard_Video min-w-[220px]">
+                <source
+                  src="https://withlocals-com-res.cloudinary.com/video/upload/w_184,h_285,g_center,c_fill,q_auto,br_250k/f_mp4/FOOD_TOUR_ROME_sftijk.mp4"
+                  type="video/mp4">
+                <source
+                  src="https://withlocals-com-res.cloudinary.com/video/upload/w_184,h_285,g_center,c_fill,q_60:qmax_90,br_250k/f_webm/FOOD_TOUR_ROME_sftijk.webm"
+                  type="video/webm">
+              </video>
+
+              <div class="flex mx-auto items-center sm:mt-5  max-w-[170px] text-green-800">
+                <i class="fa fa-chevron-left mr-2" aria-hidden="true"></i>
+                <i class="fa fa-map-marker text-green-500 border hover:bg-green-800 p-1 m-2 flex items-center justify-center w-28 border-black "
+                  aria-hidden="true">
+                  <span class=" lg:mx-1 m-2 text-green-800 hover:text-white">Rome </span></i>
+                <i class="fa fa-chevron-right ml-2" aria-hidden="true"></i>
+
+              </div>
+            </div>
+
+            <!--  -->
+            <div class="relative  flex-shrink-0">
+              <img
+                src="https://withlocals-com-res.cloudinary.com/image/upload/c_fill,f_auto,g_faces,q_auto,w_184,h_285,dpr_1.0/website/homepage/image-grid/marrakech/marrakech-3"
+                alt="Image 4" class="rounded-2xl">
+              <img
+                src="https://withlocals-com-res.cloudinary.com/image/upload/c_fill,f_auto,g_faces,q_auto,w_184,h_285,dpr_1.0/website/homepage/image-grid/marrakech/marrakech-4"
+                alt="Image 5" class="rounded-2xl mt-6">
+            </div>
+
+          </div>
         </div>
       </div>
 
@@ -114,7 +233,7 @@
 
   <!-- Local Travel Section1 -->
   <section class=" pb-6 pt-12 mt-4">
-    <div class="container w-[1212px]  mx-auto px-4">
+    <div class="container sm:w-[1212px]  mx-auto px-4">
       <h2 class="text-3xl font-bold text-pink-700 mb-6">Du lịch
         <span class="text-3xl font-bold text-pink-600">địa phương</span>
       </h2>
@@ -129,7 +248,8 @@
             <img
               src="https://lp-cms-production.imgix.net/2023-12/GettyImages-173070430.jpg?w=730&h=630&fit=crop&auto=format&q=75 "
               alt="
-              Almaty" class="rounded-lg w-full h-full object-cover">
+              Almaty"
+              class="rounded-lg w-full h-full object-cover transition-transform duration-300 ease-in-out transform group-hover:scale-110">
             <div class="absolute bottom-0 left-0 bg-black bg-opacity-25 w-full h-full text-white p-6 rounded-b-lg">
               <div
                 class=" top-0 flex items-end w-full h-full pt-4  lg:bg-gradient-to-t from-transparent-80 via-transparent-40 to-transparent lg:p-4">
@@ -230,7 +350,7 @@
 
   <!-- Local Travel Section2 -->
   <section class=" py-6">
-    <div class="container w-[1212px]  mx-auto px-4">
+    <div class="container sm:w-[1212px]  mx-auto px-4">
       <h2 class="text-3xl font-bold text-pink-700 mb-6">Du lịch
         <span class="text-3xl font-bold text-pink-600">địa phương</span>
       </h2>
@@ -245,7 +365,8 @@
             <img
               src="https://lp-cms-production.imgix.net/2023-12/GettyImages-173070430.jpg?w=730&h=630&fit=crop&auto=format&q=75 "
               alt="
-              Almaty" class="rounded-lg w-full h-full object-cover">
+              Almaty"
+              class="rounded-lg w-full h-full object-cover transition-transform duration-300 ease-in-out transform group-hover:scale-110">
             <div class="absolute bottom-0 left-0 bg-black bg-opacity-25 w-full h-full text-white p-6 rounded-b-lg">
               <div
                 class=" top-0 flex items-end w-full h-full pt-4  lg:bg-gradient-to-t from-transparent-80 via-transparent-40 to-transparent lg:p-4">
@@ -356,99 +477,203 @@
 
   <!--  -->
   <section>
-    <div class="container w-[1212px] mx-auto px-4 py-8">
+    <div class="container sm:w-[1212px] mx-auto px-4 py-8">
       <h2 class="text-3xl font-bold  text-pink-700 mb-8">Điểm đến <span class="text-pink-600">yêu thích</span></h2>
-      <div class="grid grid-cols-2 md:grid-rows-3 md:grid-cols-9  max-h-[750px] gap-2">
+      <div class="grid grid-cols-3 grid-row-6 sm:grid-rows-3 sm:grid-cols-9  sm:max-h-[750px] h-[830px] gap-2">
         <!-- ĐÀ NẴNG -->
-        <div class="col-span-3 row-span-2 relative overflow-hidden rounded-lg ">
+        <div class="sm:col-span-3 sm:row-span-2 col-span-2 row-span-2 relative group overflow-hidden rounded-lg  ">
           <img src="https://media.travel.com.vn/Destination/tf_240925014817_904033_SONG%20NHO%20QUE%20(5).jpg"
-            alt="ĐÀ NẴNG" class="w-full h-full object-cover  transition-transform duration-500 hover:bg-slate-500">
-          <div class=" absolute bottom-1/2 left-0 right-0  p-4">
-            <h3 class=" text-white text-lg font-bold flex justify-center  ">ĐÀ NẴNG</h3>
+            alt="ĐÀ NẴNG"
+            class="w-full h-full object-cover  transition-transform duration-300 ease-in-out transform group-hover:scale-110">
+          <div
+            class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-300 flex flex-col items-center justify-center">
+            <div
+              class="h-1/4 text-center justify-between grid transition-all duration-300 ease-in-out transform group-hover:translate-y-[-10px]">
+              <h3 class="text-white text-sm sm:text-xl font-medium sm:font-bold  uppercase">Đà Nẵng</h3>
+              <div
+                class="w-16 h-0.5 bg-white mx-auto my-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              </div>
+              <button
+                class="bg-blue-700 font-medium hover:border-0 border border-white text-white px-4 py-1  rounded-md  transition-colors duration-300 opacity-0 group-hover:opacity-100">
+                Khám Phá
+              </button>
+            </div>
           </div>
         </div>
         <!-- NHA TRANG -->
-        <div class="col-span-2 row-span-1 relative overflow-hidden rounded-lg">
+        <div class="sm:col-span-2 sm:row-span-1 col-span-1 row-span-1 relative group overflow-hidden rounded-lg">
           <img src="https://media.travel.com.vn/Destination/tf_231009031606_269358_THAC%20BAN%20GIOC%20(5).jpg"
-            alt="NHA TRANG" class="w-full h-full object-cover ">
-          <div class="absolute bottom-1/2 left-0 right-0  p-4">
-            <h3 class="text-white text-lg font-bold flex justify-center">NHA TRANG</h3>
+            alt="NHA TRANG"
+            class="w-full h-full object-cover transition-transform duration-300 ease-in-out transform group-hover:scale-110 ">
+          <div
+            class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-300 flex flex-col items-center justify-center">
+            <div
+              class="h-1/4 text-center justify-between grid transition-all duration-300 ease-in-out transform group-hover:translate-y-[-10px]">
+              <h3 class="text-white text-sm sm:text-xl font-medium sm:font-bold  uppercase">Nha Trang</h3>
+              <div
+                class="w-16 h-0.5 bg-white mx-auto my-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              </div>
+              <button
+                class="bg-blue-700 font-medium hover:border-0 border border-white text-white px-4 py-1  rounded-md  transition-colors duration-300 opacity-0 group-hover:opacity-100">
+                Khám Phá
+              </button>
+            </div>
           </div>
         </div>
         <!-- LÂM ĐỒNG -->
-        <div class="col-span-4 row-span-1  relative overflow-hidden rounded-lg">
+        <div class="sm:col-span-4 sm:row-span-1 col-span-1 row-span-1 relative group overflow-hidden rounded-lg">
           <img src="https://media.travel.com.vn/Destination/tf_240925112549_762331_DINH%20FANSIPAN.jpg" alt="LÂM ĐỒNG"
-            class="w-full h-full object-cover">
-          <div class="absolute bottom-1/2 left-0 right-0  p-4">
-            <h3 class="text-white text-lg font-bold flex justify-center">LÂM ĐỒNG</h3>
+            class="w-full h-full object-cover transition-transform duration-300 ease-in-out transform group-hover:scale-110">
+          <div
+            class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-300 flex flex-col items-center justify-center">
+            <div
+              class="h-1/4 text-center justify-between grid transition-all duration-300 ease-in-out transform group-hover:translate-y-[-10px]">
+              <h3 class="text-white text-sm sm:text-xl font-medium sm:font-bold  uppercase">lâm đồng</h3>
+              <div
+                class="w-16 h-0.5 bg-white mx-auto my-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              </div>
+              <button
+                class="bg-blue-700 font-medium hover:border-0 border border-white text-white px-4 py-1  rounded-md  transition-colors duration-300 opacity-0 group-hover:opacity-100">
+                Khám Phá
+              </button>
+            </div>
           </div>
         </div>
         <!--HỘI AN  -->
-        <div class="col-span-2 row-span-1 relative overflow-hidden rounded-lg">
+        <div class="sm:col-span-2 sm:row-span-1 col-span-1 row-span-1 relative group overflow-hidden rounded-lg">
           <img src="https://media.travel.com.vn/Destination/tf_240925113710_870200_Moc%20Chau%20(2).jpg" alt="HỘI AN"
-            class="w-full h-full object-cover">
-          <div class="absolute bottom-1/2 left-0 right-0  p-4">
-            <h3 class="text-white text-lg font-bold flex justify-center">HỘI AN</h3>
+            class="w-full h-full object-cover transition-transform duration-300 ease-in-out transform group-hover:scale-110">
+          <div
+            class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-300 flex flex-col items-center justify-center">
+            <div
+              class="h-1/4 text-center justify-between grid transition-all duration-300 ease-in-out transform group-hover:translate-y-[-10px]">
+              <h3 class="text-white text-sm sm:text-xl font-medium sm:font-bold  uppercase">hội an</h3>
+              <div
+                class="w-16 h-0.5 bg-white mx-auto my-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              </div>
+              <button
+                class="bg-blue-700 font-medium hover:border-0 border border-white text-white px-4 py-1  rounded-md  transition-colors duration-300 opacity-0 group-hover:opacity-100">
+                Khám Phá
+              </button>
+            </div>
           </div>
         </div>
         <!-- HUẾ -->
-        <div class="col-span-2 row-span-1 relative overflow-hidden rounded-lg">
+        <div class="sm:col-span-2 sm:row-span-1 col-span-2 row-span-1 relative group overflow-hidden rounded-lg">
           <img
             src="https://media.travel.com.vn/Destination/tf_240719110728_655478_Lake Na Hang is where Gam and Nang rivers meet (2).jpg"
-            alt="HUẾ" class="w-full h-full object-cover">
-          <div class="absolute bottom-1/2 left-0 right-0  p-4">
-            <h3 class="text-white text-lg font-bold flex justify-center">HUẾ</h3>
+            alt="HUẾ"
+            class="w-full h-full object-cover transition-transform duration-300 ease-in-out transform group-hover:scale-110">
+          <div
+            class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-300 flex flex-col items-center justify-center">
+            <div
+              class="h-1/4 text-center justify-between grid transition-all duration-300 ease-in-out transform group-hover:translate-y-[-10px]">
+              <h3 class="text-white text-sm sm:text-xl font-medium sm:font-bold  uppercase">huế</h3>
+              <div
+                class="w-16 h-0.5 bg-white mx-auto my-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              </div>
+              <button
+                class="bg-blue-700 font-medium hover:border-0 border border-white text-white px-4 py-1  rounded-md  transition-colors duration-300 opacity-0 group-hover:opacity-100">
+                Khám Phá
+              </button>
+            </div>
           </div>
         </div>
         <!--PHÚ YÊN  -->
-        <div class="col-span-2 row-span-2 relative overflow-hidden rounded-lg">
+        <div class="sm:col-span-2 sm:row-span-2 col-span-3 row-span-1 relative group overflow-hidden rounded-lg">
           <img src="https://media.travel.com.vn/Destination/tf_240925113033_612749_DUONG%20LEN%20DONG%20VAN%20(2).jpg"
-            alt="PHÚ YÊN" class="w-full h-full object-cover">
-          <div class="absolute bottom-1/2 left-0 right-0  p-4">
-            <h3 class="text-white text-lg font-bold flex justify-center">PHÚ YÊN</h3>
+            alt="PHÚ YÊN"
+            class="w-full h-full object-cover transition-transform duration-300 ease-in-out transform group-hover:scale-110">
+          <div
+            class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-300 flex flex-col items-center justify-center">
+            <div
+              class="h-1/4 text-center justify-between grid transition-all duration-300 ease-in-out transform group-hover:translate-y-[-10px]">
+              <h3 class="text-white text-sm sm:text-xl font-medium sm:font-bold  uppercase">phú yên</h3>
+              <div
+                class="w-16 h-0.5 bg-white mx-auto my-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              </div>
+              <button
+                class="bg-blue-700 font-medium hover:border-0 border border-white text-white px-4 py-1  rounded-md  transition-colors duration-300 opacity-0 group-hover:opacity-100">
+                Khám Phá
+              </button>
+            </div>
           </div>
         </div>
         <!-- QUY NHƠN -->
-        <div class="col-span-2 row-span-1 relative overflow-hidden rounded-lg">
+        <div class="sm:col-span-2 sm:row-span-1 col-span-1 row-span-1 relative group overflow-hidden rounded-lg">
           <img src="https://media.travel.com.vn/Destination/tf_240925021528_651599_HOA%20TAM%20GIAC%20MACH%20(5).jpg"
-            alt="QUY NHƠN" class="w-full h-full object-cover">
-          <div class="absolute bottom-1/2 left-0 right-0  p-4">
-            <h3 class="text-white text-lg font-bold flex justify-center">QUY NHƠN</h3>
+            alt="QUY NHƠN"
+            class="w-full h-full object-cover transition-transform duration-300 ease-in-out transform group-hover:scale-110">
+          <div
+            class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-300 flex flex-col items-center justify-center">
+            <div
+              class="h-1/4 text-center justify-between grid transition-all duration-300 ease-in-out transform group-hover:translate-y-[-10px]">
+              <h3 class="text-white text-sm sm:text-xl font-medium sm:font-bold  uppercase">Quy nhơn</h3>
+              <div
+                class="w-16 h-0.5 bg-white mx-auto my-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              </div>
+              <button
+                class="bg-blue-700 font-medium hover:border-0 border border-white text-white px-4 py-1  rounded-md  transition-colors duration-300 opacity-0 group-hover:opacity-100">
+                Khám Phá
+              </button>
+            </div>
           </div>
         </div>
         <!-- PHAN THIẾT -->
-        <div class="col-span-3 row-span-1 relative overflow-hidden rounded-lg">
+        <div class="sm:col-span-3 sm:row-span-1 col-span-2 row-span-2 relative group overflow-hidden rounded-lg">
           <img src="https://media.travel.com.vn/Destination/tf_240506100240_936246_SONG%20NHO%20QUE.jpg"
-            alt="PHAN THIẾT" class="w-full h-full object-cover">
-          <div class="absolute bottom-1/2 left-0 right-0  p-4">
-            <h3 class="text-white text-lg font-bold flex justify-center">PHAN THIẾT</h3>
+            alt="PHAN THIẾT"
+            class="w-full h-full object-cover transition-transform duration-300 ease-in-out transform group-hover:scale-110">
+          <div
+            class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-300 flex flex-col items-center justify-center">
+            <div
+              class="h-1/4 text-center justify-between grid transition-all duration-300 ease-in-out transform group-hover:translate-y-[-10px]">
+              <h3 class="text-white text-sm sm:text-xl font-medium sm:font-bold  uppercase">phan thiết</h3>
+              <div
+                class="w-16 h-0.5 bg-white mx-auto my-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              </div>
+              <button
+                class="bg-blue-700 font-medium hover:border-0 border border-white text-white px-4 py-1  rounded-md  transition-colors duration-300 opacity-0 group-hover:opacity-100">
+                Khám Phá
+              </button>
+            </div>
           </div>
         </div>
         <!-- QUẢNG BÌNH -->
-        <div class="col-span-2 row-span-1 relative overflow-hidden rounded-lg">
+        <div class="sm:col-span-2 sm:row-span-1 col-span-1 row-span-1 relative group overflow-hidden rounded-lg">
           <img src="https://media.travel.com.vn/Destination/tf_230724045742_043332_Paradise%20Grand.jpg"
-            alt="QUẢNG BÌNH" class="w-full h-full object-cover">
-          <div class="absolute bottom-1/2 left-0 right-0  p-4">
-            <h3 class="text-white text-lg font-bold flex justify-center">QUẢNG BÌNH</h3>
+            alt="QUẢNG BÌNH"
+            class="w-full h-full object-cover transition-transform duration-300 ease-in-out transform group-hover:scale-110">
+          <div
+            class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-300 flex flex-col items-center justify-center">
+            <div
+              class="h-1/4 text-center justify-between grid transition-all duration-300 ease-in-out transform group-hover:translate-y-[-10px]">
+              <h3 class="text-white text-sm sm:text-xl font-medium sm:font-bold  uppercase">quảng bình</h3>
+              <div
+                class="w-16 h-0.5 bg-white mx-auto my-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              </div>
+              <button
+                class="bg-blue-700 font-medium hover:border-0 border border-white text-white px-4 py-1  rounded-md  transition-colors duration-300 opacity-0 group-hover:opacity-100">
+                Khám Phá
+              </button>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
   </section>
 
   <!--  -->
-  <section class="bg-[#feeddc]">
-    <div class="container w-[1212px] mx-auto px-4 py-8">
+  <section class="bg-[#feeddc] ">
+    <div class="container sm:w-[1212px] mx-auto px-4 sm:py-8 pt-4 pb-16 ">
       <h2 class="text-2xl font-bold text-pink-700 mb-2">Những vị khách <span
           class="text-2xl font-bold text-pink-600">của chúng tôi</span></h2>
-      <p class="text-gray-600 mb-6">Họ đã nói gì sau khi đến với Hưng Nguyên?</p>
+      <p class="text-gray-600 mb-6">Họ đã nói gì sau khi đến với Huyện Hưng Nguyên ?</p>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="flex sm:grid sm:grid-cols-3 overflow-x-auto gap-6">
         <!-- 1 -->
-        <div class="bg-white rounded-lg shadow-md p-6 flex flex-col">
+        <div class="bg-white min-w-[300px] sm:min-w-full rounded-lg shadow-md p-6 flex flex-col">
           <div class="flex items-center">
             <span class="text-pink-700 text-sm lg:text-base mr-2">5.0</span>
-            <span class="text-pink-700 text-xl mr-1">★★★★★</span>
+            <span class="text-pink-700 text-sm sm:text-xl font-medium sm:mr-1">★★★★★</span>
           </div>
           <div class="pb-8 flex-grow">
             <h3 class="font-bold mb-2">A great 3 hours with a cool local</h3>
@@ -457,7 +682,7 @@
               with us along the way. We got to some local places that were very nice to see. Very very nice tour with a
               very very nice guy!"</p>
           </div>
-          <div class="grid lg:grid-cols-3 gap-8">
+          <div class="grid  lg:grid-cols-3 gap-8 justify-center">
             <div class="flex items-center relative ">
               <img
                 src="https://withlocals-com-res.cloudinary.com/image/upload/c_fill,ar_1,f_auto,q_auto,w_64//website/homepage/testimonials/local-sebastian"
@@ -474,10 +699,10 @@
           </div>
         </div>
         <!-- 2 -->
-        <div class="bg-white rounded-lg shadow-md p-6 flex flex-col">
+        <div class="bg-white min-w-[300px] sm:min-w-full rounded-lg shadow-md p-6 flex flex-col">
           <div class="flex items-center">
             <span class="text-pink-700 text-base mr-2">5.0</span>
-            <span class="text-pink-700 text-xl mr-1">★★★★★</span>
+            <span class="text-pink-700 text-sm sm:text-xl font-medium sm:mr-1">★★★★★</span>
           </div>
           <div class="pb-8 flex-grow">
             <h3 class="font-bold mb-2">Great day out with Big!</h3>
@@ -485,7 +710,7 @@
               Thai history, culture and food, and of course tasted some amazing dishes along the way. I would recommend
               a tour with Big to anyone as an introduction to Thailand and Bangkok!"</p>
           </div>
-          <div class="grid lg:grid-cols-3 gap-8">
+          <div class="grid lg:grid-cols-3 gap-8 justify-center">
             <div class="flex items-center relative">
               <img
                 src="https://withlocals-com-res.cloudinary.com/image/upload/c_fill,ar_1,f_auto,q_auto,w_64//website/homepage/testimonials/local-big"
@@ -502,10 +727,10 @@
           </div>
         </div>
         <!-- 3 -->
-        <div class="bg-white rounded-lg shadow-md p-6 flex flex-col">
+        <div class="bg-white min-w-[300px] sm:min-w-full rounded-lg shadow-md p-6 flex flex-col">
           <div class="flex items-center">
             <span class="text-pink-700 text-base mr-2">5.0</span>
-            <span class="text-pink-700 text-xl mr-1">★★★★★</span>
+            <span class="text-pink-700 text-sm sm:text-xl font-medium sm:mr-1">★★★★★</span>
           </div>
           <div class="pb-8 flex-grow">
             <h3 class="font-bold mb-2">Great experience</h3>
@@ -513,7 +738,7 @@
               through Istanbul, we tasted amazing food and coffee. We had such a good time together, nice chats and a
               lovely walk. Can recommend her 100%!!"</p>
           </div>
-          <div class="grid lg:grid-cols-3 gap-8">
+          <div class="grid lg:grid-cols-3 gap-8 justify-center">
             <div class="flex items-center relative">
               <img
                 src="https://withlocals-com-res.cloudinary.com/image/upload/c_fill,ar_1,f_auto,q_auto,w_64//website/homepage/testimonials/local-ceren"
@@ -530,11 +755,19 @@
           </div>
         </div>
       </div>
+      <div class="sm:hidden ">
+        <div class="flex float-right mx-5 mt-2 gap-2  ">
+          <i class="fa fa-chevron-left btn-left p-2.5 h-9 w-9 hover:bg-pink-700 hover:text-white border-gray-400 border rounded-[50%] "
+            aria-hidden="true"></i>
+          <i class="fa fa-chevron-right btn-right p-2.5 h-9 w-9 hover:bg-pink-700 hover:text-white border-gray-400  border rounded-[50%]"
+            aria-hidden="true"></i>
+        </div>
+      </div>
     </div>
   </section>
 
   <footer class="bg-gray-800 text-white mt-12 py-8">
-    <div class="container w-[1212px] mx-auto px-4">
+    <div class="container sm:w-[1212px] mx-auto px-4">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div>
           <h3 class="text-lg font-bold mb-4">VỀ CHÚNG TÔI</h3>
@@ -580,7 +813,7 @@
     </div>
   </footer>
   <section class="bg-gray-900 ">
-    <div class="container w-[1212px] mx-auto text-white py-4  text-sm">
+    <div class="container sm:w-[1212px] mx-auto text-white py-4 px-4 text-sm">
       © Copyright 2024 Tourism Danang. All rights reserved. Made with <span class=" text-red-600">♥</span> in Da Nang
     </div>
   </section>
